@@ -1,6 +1,6 @@
 'use strict'
 
-function MultiStore (rdf, options) {
+function MultiStore (options) {
   var self = this
 
   options = options || {}

@@ -21,7 +21,7 @@ var MultiStore = require('rdf-store-multi')
 
 var ldp = new LdpStore(rdf)
 var fs = new FileStore(rdf)
-var multi = new MultiStore(rdf, {
+var multi = new MultiStore({
   router: function (iri, method, callback) {
     if (string(iri).beginsWith('http://localhost')) {
       callback(null, fs)
