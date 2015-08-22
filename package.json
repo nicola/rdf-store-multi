@@ -1,0 +1,29 @@
+{
+  "name": "rdf-store-multi",
+  "version": "0.1.0",
+  "description": "RDF Store that can run multiple RDF stores",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha ./test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nicola/rdf-store-multi.git"
+  },
+  "keywords": [
+    "rdf-stores",
+    "rdf",
+    "linked",
+    "data"
+  ],
+  "author": "Nicola Greco <me@nicola.io> (http://nicolagreco.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nicola/rdf-store-multi/issues"
+  },
+  "homepage": "https://github.com/nicola/rdf-store-multi",
+  "devDependencies": {
+    "mocha": "^2.2.5",
+    "rdf-ext": "^0.2.6"
+  }
+}
