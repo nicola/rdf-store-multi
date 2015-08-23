@@ -23,7 +23,6 @@
   },
   "homepage": "https://github.com/nicola/rdf-store-multi",
   "devDependencies": {
-    "mocha": "^2.2.5",
-    "rdf-ext": "^0.2.6"
+    "mocha": "^2.2.5"
   }
 }
