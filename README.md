@@ -1,6 +1,6 @@
 # rdf-store-multi
 
-RDF Store that can run multiple RDF stores [RDF-Ext Interface](http://bergos.github.io/rdf-ext-spec/) specification.
+RDF Store that can run multiple RDF stores [RDF-Ext Interface](http://rdf-ext.github.io/rdf-ext-spec/) specification.
 
 ## Install
 
@@ -32,6 +32,8 @@ var multi = new MultiStore({
   }
 })
 ```
+
+The above example is implemented in [rdf-store-server](http://npm.im/rdf-store-server)
 
 ## History
 
