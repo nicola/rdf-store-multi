@@ -24,7 +24,7 @@ var fs = new FileStore(rdf)
 var multi = new MultiStore({
   router: function (method, args, callback) {
     var iri = args[0]
-    if (string(iri).beginsWith('http://localhost')) {
+    if (string(iri).startsWith('http://localhost')) {
       callback(null, fs)
     } else {
       callback(null, ldp)
