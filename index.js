@@ -13,10 +13,10 @@ function MultiStore (options) {
     })
   }
 
-  self.match = function (iri, subject, predicate, object, callback, limit) {
+  self.match = function (iri, subject, predicate, object, callback, limit, options) {
     self.router('match', arguments, function (err, store) {
       if (err) return callback(null, err)
-      store.match(iri, subject, predicate, object, callback, limit)
+      store.match(iri, subject, predicate, object, callback, limit, options)
     })
   }
 
@@ -34,24 +34,24 @@ function MultiStore (options) {
     })
   }
 
-  self.remove = function (iri, graph, callback) {
+  self.remove = function (iri, graph, callback, options) {
     self.router('remove', arguments, function (err, store) {
       if (err) return callback(null, err)
-      store.remove(iri, graph, callback)
+      store.remove(iri, graph, callback, options)
     })
   }
 
-  self.removeMatches = function (iri, subject, predicate, object, callback) {
+  self.removeMatches = function (iri, subject, predicate, object, callback, options) {
     self.router('removeMatches', arguments, function (err, store) {
       if (err) return callback(null, err)
-      store.removeMatches(iri, subject, predicate, object, callback)
+      store.removeMatches(iri, subject, predicate, object, callback, options)
     })
   }
 
-  self.delete = function (iri, callback) {
+  self.delete = function (iri, callback, options) {
     self.router('delete', arguments, function (err, store) {
       if (err) return callback(null, err)
-      store.delete(iri, callback)
+      store.delete(iri, callback, options)
     })
   }
 }
