@@ -24,5 +24,8 @@
   "homepage": "https://github.com/nicola/rdf-store-multi",
   "devDependencies": {
     "mocha": "^2.2.5"
+  },
+  "dependencies": {
+    "rdf-store-abstract": "^0.3.0-rc1"
   }
 }
