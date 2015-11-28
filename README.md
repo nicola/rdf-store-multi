@@ -1,6 +1,7 @@
 # rdf-store-multi
+[![](https://img.shields.io/badge/project-Solid-7C4DFF.svg?style=flat-square)](https://github.com/solid/solid)
 
-RDF Store that can run multiple RDF stores [RDF-Ext Interface](http://rdf-ext.github.io/rdf-ext-spec/) specification.
+> RDF Store that can run multiple RDF stores [RDF-Ext Interface](http://rdf-ext.github.io/rdf-ext-spec/) specification.
 
 ## Install
 
